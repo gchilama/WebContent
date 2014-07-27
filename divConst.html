@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <script src="jquery-ui-1.11.0/external/jquery/jquery.js"></script>
+<script src="jquery-ui-1.11.0/jquery-ui.js"></script>
+<link href="jquery-ui-1.11.0/jquery-ui.css" rel="stylesheet">
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+  <style>
+  /*This is to remove the outline on active tabs*/
+  .ui-widget * { outline: none; }
+  </style>
+  
+</head>
+<body>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Tab 1</a></li>
+    <li><a href="#tabs-2">Tab 2</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>This is the content of Tab1</p>
+  </div>
+  <div id="tabs-2">
+    <p>This is the content of Tab2.</p>
+  </div>
+</div>
+</body>
+</html>
